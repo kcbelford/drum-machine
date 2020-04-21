@@ -18,8 +18,6 @@ h2 {
 }
 
 main {
-  /* min-width: 576px; */
-  /* max-width: 1440px; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -48,8 +46,8 @@ section:after {
   padding-bottom: 100%;
 }
 
-@media screen and (min-width: 374px) {
+/* @media screen and (min-width: 374px) {
   .extra-pad {
     display: none;
   }
-}
+} */
