@@ -1,6 +1,6 @@
 $(document).ready(function() {
   const cowbell = new Audio("./assets/audio/808-Cowbell1.wav");
-  $('#cowbell').on("click", e => cowbell.play());
+  $('#cowbell').click(e => cowbell.play());
 
   const clap = new Audio("./assets/audio/808-Clap02.wav");
   $('#clap').click(e => clap.play());
