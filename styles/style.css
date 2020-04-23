@@ -27,6 +27,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  background-color: teal;
 }
 
 section {
