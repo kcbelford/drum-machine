@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  Audio.preload = 'auto';
 
   const cowbell = new Audio("./assets/audio/808-Cowbell1.wav");
   $('#cowbell').mousedown(function(e) {
