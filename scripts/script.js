@@ -11,11 +11,7 @@ $(document).ready(function() {
     e.preventDefault();
     cowbell.load();
     cowbell.play();
-  })
-
-  $('#cowbell').on('touchend', function(e) {
-    e.preventDefault();
-    cowbell.load();
+    return
   })
 
   const clap = new Audio("./assets/audio/808-Clap02.wav");
@@ -23,6 +19,7 @@ $(document).ready(function() {
     e.preventDefault();
     clap.load();
     clap.play();
+    return
   });
 
   const clave = new Audio("./assets/audio/808-Clave1.wav");
