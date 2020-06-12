@@ -1,15 +1,13 @@
 $(document).ready(function() {
 
-  // const cowbell = new Audio("./assets/audio/808-Cowbell1.wav");
+  const cowbell = new Audio("./assets/audio/808-Cowbell1.wav");
   // $('#cowbell').mousedown(function(e) {
   //   e.preventDefault();
   //   cowbell.load();
   //   cowbell.play();
   // });
 
-  const cowbell = 'data:audio/wav;base64,assets/audio/808-Cowbell1.wav'
-
-  $('#cowbell').on('touchstart', function(e) {
+  $('#cowbell').on('tap', function(e) {
     // e.preventDefault();
     // cowbell.load();
     cowbell.play();
