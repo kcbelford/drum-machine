@@ -7,9 +7,9 @@ $(document).ready(function() {
   //   cowbell.play();
   // });
 
-  $('#cowbell').on('tap', function(e) {
-    // e.preventDefault();
-    // cowbell.load();
+  $('#cowbell').on('tap mousedown', function(e) {
+    e.preventDefault();
+    cowbell.load();
     cowbell.play();
   })
 
