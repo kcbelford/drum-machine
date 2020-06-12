@@ -3,6 +3,7 @@
 }
 
 html {
+  -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 
@@ -31,7 +32,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: teal;
+  background-color: coral;
 }
 
 section {
