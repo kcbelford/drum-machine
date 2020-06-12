@@ -1,17 +1,18 @@
 $(document).ready(function() {
 
-  const cowbell = new Audio("./assets/audio/808-Cowbell1.wav");
+  // const cowbell = new Audio("./assets/audio/808-Cowbell1.wav");
   // $('#cowbell').mousedown(function(e) {
   //   e.preventDefault();
   //   cowbell.load();
   //   cowbell.play();
   // });
 
+  const cowbell = 'data:audio/wav;base64,assets/audio/808-Cowbell1.wav'
+
   $('#cowbell').on('touchstart', function(e) {
-    e.preventDefault();
-    cowbell.load();
+    // e.preventDefault();
+    // cowbell.load();
     cowbell.play();
-    return
   })
 
   const clap = new Audio("./assets/audio/808-Clap02.wav");
@@ -19,7 +20,6 @@ $(document).ready(function() {
     e.preventDefault();
     clap.load();
     clap.play();
-    return
   });
 
   const clave = new Audio("./assets/audio/808-Clave1.wav");
