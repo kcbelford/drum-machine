@@ -13,6 +13,11 @@ $(document).ready(function() {
     cowbell.play();
   })
 
+  $('#cowbell').on('touchend', function(e) {
+    e.preventDefault();
+    cowbell.load();
+  })
+
   const clap = new Audio("./assets/audio/808-Clap02.wav");
   $('#clap').mousedown(function(e) {
     e.preventDefault();
