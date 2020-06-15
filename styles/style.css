@@ -9,10 +9,17 @@ html {
 
 body {
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
 }
 
 h1 {
@@ -26,38 +33,72 @@ h2 {
   text-align: center;
 }
 
-main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  background-color: white;
-}
-
-section {
+.pad {
+  transition: all .07s ease;
+  color: white;
   width: 45%;
   /* min-width: 150px; */
   max-width: 300px;
-  outline: 3px solid black;
+  border: 3px solid black;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
-.number {
+.key {
   font-size: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-section:after {
+.instrument {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.pad:after {
   content: "";
   display: block;
   padding-bottom: 100%;
 }
 
-/* @media screen and (min-width: 374px) {
-  .extra-pad {
-    display: none;
-  }
-} */
+.played {
+  transform: scale(0.9);
+  border: 6px solid #FF2400;
+}
+
+.A {
+  /* background-image: linear-gradient(to bottom right, #2C73D2, white); */
+  background-color: #2C73D2;
+}
+
+.S {
+  background-color: #845EC2;
+}
+
+.D {
+  background-color: #D65DB1;
+}
+
+.F {
+  background-color: #FF6F91;
+}
+
+.Z {
+  background-color: #FF9671;
+}
+
+.X {
+  background-color: #FFC75F;
+}
+
+.C {
+  background-color: #F9F871;
+}
+
+.V {
+  background-color: #4FFBDF;
+}
