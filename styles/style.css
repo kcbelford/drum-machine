@@ -7,12 +7,36 @@ html {
   touch-action: manipulation;
 }
 
-body {
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+header {
+  width: 25%;
+  padding: 1rem;
 }
 
-main {
+.drums-header {
+  /* margin-top: 2rem; */
+  text-align: center;
+}
+
+.drums-description {
+  font-size: 1rem;
+  /* margin-bottom: 2rem; */
+  /* text-align: center; */
+  text-transform: uppercase;
+}
+
+.drums-container {
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  color: #E6E8BF;
+  display: flex;
+  background-color: #2F2E3E;
+  margin: 0;
+}
+
+.drum-machine {
+  width: 75%;
   padding: 1.5rem;
   display: flex;
   flex-direction: row;
@@ -20,31 +44,23 @@ main {
   justify-content: space-around;
   align-items: center;
   background-color: white;
-}
-
-h1 {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  text-align: center;
+  /* align-items: flex-end; */
+  background-color: #2F2E3E;
 }
 
 .pad {
   transition: all .07s ease;
-  color: white;
-  width: 45%;
-  /* min-width: 150px; */
-  max-width: 300px;
-  border: 3px solid black;
-  margin-bottom: 1rem;
+  color: #2F2E3E;
+  width: calc(25% - 0.5rem);
+  min-width: calc(150px - 0.5rem);
+  /* max-width: 300px; */
+  /* border: 3px solid black; */
+  /* margin-bottom: 0.5rem; */
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .key {
@@ -55,7 +71,7 @@ h2 {
 }
 
 .instrument {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -67,15 +83,14 @@ h2 {
 
 .played {
   transform: scale(0.9);
-  border: 6px solid #FF2400;
+  border: 6px solid #DDDA00;
 }
 
-.A {
-  /* background-image: linear-gradient(to bottom right, #2C73D2, white); */
-  background-color: #2C73D2;
+.A, .S, .D, .F {
+  background-color: #DD1D00;
 }
 
-.S {
+/* .S {
   background-color: #845EC2;
 }
 
@@ -85,13 +100,13 @@ h2 {
 
 .F {
   background-color: #FF6F91;
+} */
+
+.Z, .X, .C, .V {
+  background-color: #F27900;
 }
 
-.Z {
-  background-color: #FF9671;
-}
-
-.X {
+/* .X {
   background-color: #FFC75F;
 }
 
@@ -101,4 +116,4 @@ h2 {
 
 .V {
   background-color: #4FFBDF;
-}
+} */
