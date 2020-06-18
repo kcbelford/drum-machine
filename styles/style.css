@@ -19,8 +19,6 @@ header {
 
 .drums-description {
   font-size: 1rem;
-  /* margin-bottom: 2rem; */
-  /* text-align: center; */
   text-transform: uppercase;
 }
 
@@ -94,6 +92,14 @@ header {
 }
 
 @media screen and (max-width: 577px) {
+  .drums-description {
+    transform: rotate(-90deg);
+    width: 30rem;
+    position: relative;
+    right: 13rem;
+    top: 13rem;
+  }
+
   .pad {
     min-width: calc(120px - 0.5rem);
   }
