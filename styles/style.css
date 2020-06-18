@@ -93,11 +93,12 @@ header {
 
 @media screen and (max-width: 577px) {
   .drums-description {
+    font-size: 0.75rem;
     transform: rotate(-90deg);
     width: 30rem;
     position: relative;
     right: 13rem;
-    top: 13rem;
+    top: 10rem;
   }
 
   .pad {
