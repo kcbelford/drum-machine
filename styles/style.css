@@ -97,8 +97,14 @@ header {
     transform: rotate(-90deg);
     width: 30rem;
     position: relative;
-    right: 13rem;
+    right: 12rem;
     top: 7rem;
+  }
+
+  .instructions {
+    position: relative;
+    right: 13.5rem;
+    top: 8.5rem;
   }
 
   .pad {
