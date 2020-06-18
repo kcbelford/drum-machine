@@ -92,3 +92,21 @@ header {
 .Z, .X, .C, .V {
   background-color: #F27900;
 }
+
+@media screen and (max-width: 577px) {
+  .pad {
+    min-width: calc(120px - 0.5rem);
+  }
+
+  .key {
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .instrument {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
