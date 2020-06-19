@@ -13,12 +13,17 @@ header {
 }
 
 .drums-header {
-  /* margin-top: 2rem; */
-  text-align: center;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  /* text-align: center; */
+}
+
+.instructions {
+  padding-top: 2rem;
 }
 
 .drums-description {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -91,7 +96,12 @@ header {
   background-color: #F27900;
 }
 
+.mobile-background {
+  display: none;
+}
+
 @media screen and (max-width: 577px) {
+
   .drums-description {
     font-size: 0.75rem;
     transform: rotate(-90deg);
@@ -101,10 +111,15 @@ header {
     top: 7rem;
   }
 
+  .drums-header {
+    font-size: 1.5rem;
+  }
+
   .instructions {
     position: relative;
     right: 13.5rem;
     top: 8.5rem;
+    padding-top: 0;
   }
 
   .pad {
@@ -121,5 +136,17 @@ header {
   .instrument {
     font-size: 1rem;
     text-transform: uppercase;
+  }
+
+  .mobile-background {
+    display: block;
+    background-color: rgba(200, 200, 200, 0.8);
+    position: absolute;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
   }
 }
